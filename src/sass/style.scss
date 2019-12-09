@@ -1,0 +1,43 @@
+// Style plagin
+@import "variables";
+
+// @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+// My style
+
+@import "grid-mixins";
+
+@import "functions";
+
+@import "fonts";
+@import "global";
+
+@import "../blocks/companents/container/container";
+@import "../blocks/companents/btn/btn";
+@import "../blocks/companents/title/title";
+@import "../blocks/companents/logo/logo";
+
+@import "../blocks/project/page-header/page-header";
+@import "../blocks/project/page-footer/page-footer";
+@import "../blocks/project/main-block/main-block";
+@import "../blocks/project/fullpage/fullpage";
+@import "../blocks/project/order-page/order-page";
+@import "../blocks/project/navigation/navigation";
+@import "../blocks/project/social/social";
+@import "../blocks/project/products/products";
+@import "../blocks/project/modal-product/modal-product";
+
+.fancybox-bg--product {
+  background-color: #dd4026;
+}
+
+.fancybox-is-open .fancybox-bg--product {
+  opacity: 1;
+}
+
+.block-ident {
+  padding: 40px 0;
+}
+.text-center {
+  text-align: center;
+}

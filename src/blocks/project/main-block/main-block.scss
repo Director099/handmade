@@ -1,0 +1,31 @@
+.main-block {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.main-block__btn {
+  background: transparent;
+  border: 1px solid $white;
+  border-radius: 0;
+  color: $white;
+  &:hover {
+    background: $white;
+    color: $black;
+  }
+}
+
+.main-block__title {
+  margin-bottom: 30px;
+}

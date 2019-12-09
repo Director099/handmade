@@ -1,0 +1,36 @@
+.modal-product {
+  @include container();
+  padding: 44px;
+}
+
+.modal-product__row {
+  @include row();
+}
+
+.modal-product__column {
+  @include make-col(6);
+}
+
+.modal-product__content {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.modal-product__content-desk {
+
+  p {
+    margin-bottom: 15px;
+
+    &:first-child {
+      &:first-letter {
+        font-size: 42px;
+        color: #dd4026;
+        padding-right: 5px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

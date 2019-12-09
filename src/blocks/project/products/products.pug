@@ -1,0 +1,7 @@
+mixin products(data)
+    a.products__item()
+        img(src= data.src, alt= data.title)
+        .products__info
+            h2.products__title= data.title
+            p.products__price= data.price
+            span.btn.btn--lighten Подробнее

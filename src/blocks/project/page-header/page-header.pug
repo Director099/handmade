@@ -1,0 +1,20 @@
+mixin page-header()
+  .page-header
+    .container
+      .page-header__row
+        nav.navigation
+          ul.navigation__list
+            li.navigation__item
+              a.navigation__link О себе
+            li.navigation__item
+              a.navigation__link Доставка
+          .navigation__social
+            ul.social
+              li.social__item
+                a.social__link.social__link--white(href="#" target="_blank" aria-label="В контакте")
+                  svg(width="21" height="18")
+                    use(xlink:href="img/symbols.svg#vk")
+              li.social__item
+                a.social__link.social__link--white(href="#" target="_blank" aria-label="Инстаграм")
+                  svg(width="12" height="12")
+                    use(xlink:href="img/symbols.svg#instagram")

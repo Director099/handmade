@@ -1,0 +1,41 @@
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navigation__list {
+  @include ul-none();
+  display: flex;
+}
+
+.navigation__item {
+  position: relative;
+  padding: 0 15px;
+  font-weight: 400;
+  line-height: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 10px;
+    border-right: 1px dotted $white;
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.navigation__link {
+  color: $white;
+  font-size: 14px;
+}
+
+.navigation__social {
+  margin-left: 20px;
+}

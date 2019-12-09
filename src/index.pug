@@ -1,0 +1,79 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+block header
+  .fullpage
+    section.main-block
+      h1.title.title--white.main-block__title Мастер рукоделия Галина Шевцова
+      a.btn.main-block__btn(href="#main") Мои работы
+block content
+  main(id="main")
+    .products
+      .products__item
+        section.about
+          h2.title.about__title О себе
+          .about__desc
+            p История одного воротника. Однажды, в далеком-далеком городе, в далеком-далеком прошлом... находясь в парадной старинного дома, я увидела массивный деревянный сундук, особняком стоящий на лестничной площадке. Естественно, я не смогла пройти мимо и заглянула в него. Внутри я увидела пожелтевшую, со спецефическим запахом старости стопку домашнего текстиля. Но не только...Я заметила, что с краю лежит пара тонких женских перчаток в заводской упаковке и белый кружевной воротник. Я обомлела от красоты воротника, но даже представить себе не могла как такое можно сотворить.
+          ul.social
+            li.social__item
+              a(href="", target="_blank" aria-label='вконтакте')
+            li.social__item
+              a(href="", target="_blank" aria-label='инстаграмм')
+            li.social__item
+              a(href="", target="_blank" aria-label='whatsapp')
+            li.social__item
+              a(href="", target="_blank" aria-label='telegram')
+      +products({
+          src: "img/content/img-1.jpg",
+          title: 'Кружевная «ракушка»',
+          price: 1000
+      })
+      +products({
+          src: "img/content/img-2.jpg",
+          title: 'Кружевная «ракушка»',
+          price: 1000
+      })
+      +products({
+          src: "img/content/img-3.jpg",
+          title: 'Кружевная «ракушка»',
+          price: 1000
+      })
+      +products({
+          src: "img/content/img-4.jpg",
+          title: 'Кружевная «ракушка»',
+          price: 1000
+      })
+      +products({
+          src: "img/content/img-5.jpg",
+          title: 'Кружевная «ракушка»',
+          price: 1000
+      })
+      +products({
+          src: "img/content/img-6.jpg",
+          title: 'Кружевная «ракушка»',
+          price: 1000
+      })
+      +products({
+          src: "img/content/img-7.jpg",
+          title: 'Кружевная «ракушка»',
+          price: 1000
+      })
+      +products({
+          src: "img/content/img-8.jpg",
+          title: 'Кружевная «ракушка»',
+          price: 1000
+      })
+      +products({
+          src: "img/content/img-9.jpg",
+          title: 'Кружевная «ракушка»',
+          price: 1000
+      })
+      +products({
+          src: "img/content/img-10.jpg",
+          title: 'Кружевная «ракушка»',
+          price: 1000
+      })
+    .block-ident.text-center
+      button.btn Еще работы
+block footer
